@@ -1,0 +1,12 @@
+
+public class PIIE3 {
+
+	public static void main(String[] args) {
+		System.out.println("Números pares entre 13 e 73:");
+		for (int i = 13; i < 73; i+=2) {
+			System.out.println(i);
+		}
+		
+	}
+
+}

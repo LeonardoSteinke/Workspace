@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class E3PI {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Razão da sua PA: ");
+		int R = sc.nextInt();
+		System.out.print("Primeiro termo: ");
+		int P = sc.nextInt();
+		System.out.println("Ultimo termo: ");
+		int U = sc.nextInt();
+		
+		while(P <= R){
+			P = R;
+		}
+		System.out.println(P);
+	}
+
+}

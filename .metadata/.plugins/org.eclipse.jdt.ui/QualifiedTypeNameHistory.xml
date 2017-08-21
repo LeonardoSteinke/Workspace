@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+<fullyQualifiedTypeName name="Principal.Poo"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="br.udesc.ceavi.historia.act11Comeco"/>
+<fullyQualifiedTypeName name="br.udesc.ceavi.historia.Act11Comeco"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="br.udesc.ceavi.main.Batalha"/>
+<fullyQualifiedTypeName name="br.udesc.ceavi.main.BatalhaSolo"/>
+<fullyQualifiedTypeName name="br.udesc.ceavi.main.BatalhaDupla"/>
+<fullyQualifiedTypeName name="br.udesc.ceavi.main.A"/>
+<fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+<fullyQualifiedTypeName name="java.lang.NoSuchMethodError"/>
+<fullyQualifiedTypeName name="br.udesc.ceavi.main.ULA"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+</qualifiedTypeNameHistroy>
