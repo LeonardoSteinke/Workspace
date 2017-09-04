@@ -15,5 +15,7 @@
 <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
 <fullyQualifiedTypeName name="java.lang.NoSuchMethodError"/>
 <fullyQualifiedTypeName name="br.udesc.ceavi.main.ULA"/>
+<fullyQualifiedTypeName name="javax.print.DocFlavor.STRING"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.ForegroundAction"/>
 </qualifiedTypeNameHistroy>
