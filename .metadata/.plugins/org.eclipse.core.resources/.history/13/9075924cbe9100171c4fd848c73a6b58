@@ -28,7 +28,7 @@ public class Carro {
 		System.out.println("Motor desligado.");
 	}
 	public void buzina(){
-		System.out.println("FARAHH");
+		System.out.println("FARAH");
 	}
 	public void acelerar(double kmh) {
 		this.velocidade = kmh;
