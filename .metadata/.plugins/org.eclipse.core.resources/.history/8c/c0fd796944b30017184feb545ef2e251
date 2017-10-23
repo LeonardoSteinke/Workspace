@@ -1,0 +1,25 @@
+
+public class Montadora {
+	int metal;
+	int qtosCarros;
+	String empresa;
+	public int getMetal() {
+		return metal;
+	}
+	public void setMetal(int metal) {
+		this.metal = metal;
+	}
+	public int getQtosCarros() {
+		return qtosCarros;
+	}
+	public void setQtosCarros(int qtosCarros) {
+		this.qtosCarros = qtosCarros;
+	}
+	public String getEmpresa() {
+		return empresa;
+	}
+	public void setEmpresa(String empresa) {
+		this.empresa = empresa;
+	}
+	
+}

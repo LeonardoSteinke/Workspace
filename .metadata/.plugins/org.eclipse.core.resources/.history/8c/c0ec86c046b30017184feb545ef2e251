@@ -1,0 +1,52 @@
+public class Carro {
+
+	public String modelo;
+	public int ano;
+	public int qtdMetal;
+	Montadora montadora;
+	private int qtosCarros;
+	
+	public void montarCarro(Montadora montadora, int qtd){
+		if(montadora.temMetal(qtd)){
+			qtosCarros += 1;
+			System.out.println("Carro montado com sucesso");
+		}
+	}
+
+	public String getModelo() {
+		return modelo;
+	}
+
+	public void setModelo(String modelo) {
+		this.modelo = modelo;
+	}
+
+	public int getAno() {
+		return ano;
+	}
+
+	public void setAno(int ano) {
+		this.ano = ano;
+	}
+
+	public int getQtdMetal() {
+		return qtdMetal;
+	}
+
+	public void setQtdMetal(int qtdMetal) {
+		this.qtdMetal = qtdMetal;
+	}
+
+	public Montadora getMontadora() {
+		return montadora;
+	}
+
+	public void setMontadora(Montadora montadora) {
+		this.montadora = montadora;
+	}
+
+	
+
+	
+
+}

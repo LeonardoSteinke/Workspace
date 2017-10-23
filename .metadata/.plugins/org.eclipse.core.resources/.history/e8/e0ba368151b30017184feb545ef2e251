@@ -1,0 +1,83 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		int a = 1;
+		Scanner sc = new Scanner(System.in);
+		while (a != 4) {
+			System.out.println(
+					"Empresa montadora de carros\n1) Dependência\n2) Associação por agregação\n3) Associação por composição");
+			a = sc.nextInt();
+			while (a == 1) {
+
+				ArrayList<Carro> lista1 = new ArrayList<Carro>();
+				Montadora m = new Montadora();
+				System.out.print("Digite o nome da empresa: ");
+				m.empresa = sc.nextLine();
+				m.empresa = sc.nextLine();
+				System.out.print("Quantidade de metal na empresa: ");
+				m.metal = sc.nextInt();
+				System.out.print("Valor do carro: ");
+				m.valor = sc.nextInt();
+				System.out.println("Criar um carro? \n1) sim\n2) não");
+				int nun = sc.nextInt();
+				while (nun == 1) {
+					Carro c = new Carro();
+					System.out.println("Ano do carro: ");
+					c.ano = sc.nextInt();
+					System.out.println("Nome do Carro");
+					c.modelo = sc.nextLine();
+					c.modelo = sc.nextLine();
+					System.out.println("Quantidade de metal necessária");
+					c.qtdMetal = sc.nextInt();
+					if (c.montarCarro(m, c.qtdMetal) == true) {
+						lista1.add(c);
+					}
+					int i = 1;
+					while (i == 1) {
+						System.out.println(
+								"1) Montar outro carro\n2) Ver seus carros\n3) Remover um item\n4) Pesquisar\n5) Sair");
+						i = sc.nextInt();
+						if (i == 1) {
+							i = 10;
+						}
+						if (i == 2) {
+							for (int j = 0; j < lista1.size(); j++) {
+								System.out.println((j + 1) + ")" + " Carro " + lista1.get(j).modelo + " "
+										+ lista1.get(j).ano + " foi utilizado " + lista1.get(j).qtdMetal + " de metal");
+							}
+							System.out.println("-------------------------------------------");
+							i = 1;
+						}
+						if (i == 3) {
+							System.out.println("Digite o número do que você quer excluir: ");
+							for (int j = 0; j < lista1.size(); j++) {
+								System.out.println((j + 1) +") " + lista1.get(j).modelo);
+							}
+							int qual = sc.nextInt();
+							qual -= 1;
+							lista1.remove(qual);
+							System.out.println("Carro removido");
+							i = 1;
+						}
+					}
+					if (i == 4) {
+						System.out.println("1) Pesquisar por modelo: ");
+						String pModelo = sc.nextLine();
+						for (int j = 0; j < lista1.size(); j++) {
+							if (lista1.get(j).modelo == pModelo) {
+								System.out.println(lista1.get(j).modelo);
+							}
+						}
+					}
+					if (i == 5) {
+						a = 100;
+					}
+				}
+			}
+		}
+		sc.close();
+	}
+}

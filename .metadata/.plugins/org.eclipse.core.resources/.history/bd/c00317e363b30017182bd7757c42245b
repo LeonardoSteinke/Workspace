@@ -1,0 +1,45 @@
+import java.util.ArrayList;
+
+public class Montadora {
+	// Dependência
+	int metal;
+	String empresa;
+
+	public boolean temMetal(int qtd) {
+		if (qtd <= metal) {
+			metal -= qtd;
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	// Agregação
+	String cargo;
+	int salario;
+
+	private ArrayList<Funcionario> funcionario = new ArrayList<Funcionario>();
+
+	public ArrayList<Funcionario> getFuncionario() {
+		return funcionario;
+	}
+	public void setFuncionario(ArrayList<Funcionario> funcionario){
+		this.funcionario = funcionario;
+	}
+
+	public int getMetal() {
+		return metal;
+	}
+
+	public void setMetal(int metal) {
+		this.metal = metal;
+	}
+
+	public String getEmpresa() {
+		return empresa;
+	}
+
+	public void setEmpresa(String empresa) {
+		this.empresa = empresa;
+	}
+}
